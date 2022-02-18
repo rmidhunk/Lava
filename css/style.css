@@ -1,0 +1,631 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+del {
+  text-decoration: line-through;
+}
+body {
+  font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #253858;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-weight: 500;
+  background: url(../images/left-bg-decor.png) no-repeat;
+  background-size: 550px 820px;
+  background-position: bottom 58% left 0px;
+}
+input,
+textarea,
+select {
+  font-family: "fontawesome-webfont", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT-Eestibold";
+  src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+a {
+  color: #253858;
+  display: inline-block;
+}
+a:hover,
+.submit:hover {
+  filter: alpha(opacity = 85);
+  -moz-opacity: 0.85;
+  -khtml-opacity: 0.85;
+  opacity: 0.85;
+}
+.thumb {
+  display: block;
+}
+.thumb img {
+  display: block;
+  width: 100%;
+}
+p {
+  line-height: 1.6em;
+  font-size: 16px;
+  font-family: "GT-Eesti", Arial;
+  font-weight: 500;
+  color: #42526e;
+}
+.hidden {
+  display: none;
+}
+br.clear {
+  clear: both;
+  line-height: 0;
+}
+.wrapper {
+  width: 90% !important;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+html {
+  scroll-behavior: smooth;
+}
+::placeholder {
+  color: #c0ccda;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #c0ccda;
+}
+::-ms-input-placeholder {
+  color: #c0ccda;
+}
+
+#home {
+  background: url(../images/banner-bg.png) no-repeat;
+  height: 840px;
+  background-position: 100% 0%;
+  background-size: 57%;
+}
+#home header {
+  padding: 12px 0;
+}
+#home header section.wrapper {
+  display: flex;
+}
+#home header section.wrapper div.left {
+}
+#home header section.wrapper div.left h1 {
+  font-weight: 600;
+}
+#home header section.wrapper div.middle {
+  margin-left: 23%;
+  padding: 10px;
+  background: #fff;
+}
+#home header section.wrapper div.middle ul {
+  display: flex;
+  justify-content: space-between;
+  width: 518px;
+}
+#home header section.wrapper div.middle ul li {
+  font-size: 13px;
+}
+#home header section.wrapper div.middle ul li a {
+}
+#home header section.wrapper div.middle ul li a:hover {
+  color: #f5a741;
+}
+#home section.spotlight {
+  margin-top: 200px;
+}
+#home section.spotlight section.wrapper {
+}
+#home section.spotlight section.wrapper h1 {
+  font-family: "GT-Eestibold";
+  color: #000;
+  font-size: 61px;
+  width: 44%;
+}
+#home section.spotlight section.wrapper p {
+  width: 49%;
+  margin-top: 30px;
+}
+#home section.spotlight section.wrapper div.button_container {
+}
+#home section.spotlight section.wrapper div.button_container a.button {
+  background: #f5a741;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+#features {
+  padding-bottom: 80px;
+}
+#features section.wrapper {
+}
+#features section.wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+#features section.wrapper ul li {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 32%;
+  text-align: center;
+  height: 402px;
+  position: relative;
+  border-radius: 8px;
+}
+#features section.wrapper ul li div.num {
+  font-family: "GT-Eestibold";
+  color: #ffe1d4;
+  font-size: 107px;
+  position: absolute;
+  left: 9%;
+  z-index: -1;
+}
+#features section.wrapper ul li div.img_container {
+  width: 25%;
+  margin: 32px auto;
+}
+#features section.wrapper ul li div.img_container img {
+  width: 100%;
+  display: block;
+}
+#features section.wrapper ul li h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+#features section.wrapper ul li p {
+  width: 80%;
+  font-size: 16px;
+  margin: 0 auto;
+}
+#features section.wrapper ul li a.button {
+  margin-top: 20px;
+  padding: 15px 20px;
+  background: #f1813f;
+  border-radius: 34px;
+  color: #fff;
+}
+
+#specs {
+  padding: 60px 0;
+}
+#specs section.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#specs section.wrapper div.left {
+}
+#specs section.wrapper div.left div.img_container {
+}
+#specs section.wrapper div.left div.img_container img {
+  width: 100%;
+  display: block;
+}
+#specs section.wrapper div.right {
+  width: 50%;
+}
+#specs section.wrapper div.right ul {
+}
+#specs section.wrapper div.right ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13%;
+}
+#specs section.wrapper div.right ul li div.content {
+  margin-left: 20px;
+}
+#specs section.wrapper div.right ul li div.img_container {
+}
+#specs section.wrapper div.right ul li div.img_container img {
+}
+#specs section.wrapper div.right ul li h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+#specs section.wrapper div.right ul li p {
+  width: 80%;
+  margin-top: 15px;
+}
+#about {
+}
+#about section.wrapper {
+}
+#about section.wrapper section.top {
+}
+#about section.wrapper section.top h3 {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+}
+#about section.wrapper section.top p {
+  text-align: center;
+  width: 60%;
+  margin: 30px auto;
+}
+#about section.wrapper section.bottom {
+}
+#about section.wrapper section.bottom ul {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 9% auto;
+  align-items: center;
+}
+#about section.wrapper section.bottom ul li {
+  padding: 10px;
+  background: #ef6858;
+  width: 38%;
+  position: relative;
+  height: 290px;
+  color: #fff;
+  text-align: center;
+}
+#about section.wrapper section.bottom ul li:last-child {
+  width: 8%;
+  background: #fff;
+  margin-top: 16%;
+}
+#about section.wrapper section.bottom ul li div.img_container {
+  width: 35%;
+  position: absolute;
+  top: -70px;
+  left: -69px;
+}
+#about section.wrapper section.bottom ul li div.img_container img {
+  width: 100%;
+  display: block;
+}
+#about section.wrapper section.bottom ul li small {
+  font-size: 50px;
+  font-family: "GT-Eestibold";
+}
+#about section.wrapper section.bottom ul li h4 {
+  font-size: 30px;
+  font-weight: 500;
+}
+#about section.wrapper section.bottom ul li blockquote {
+  width: 80%;
+  margin: 30px auto;
+}
+#about section.wrapper section.bottom ul li p {
+  color: #fff;
+  margin-top: 30px;
+}
+#about section.wrapper section.bottom ul li div.arrow {
+  position: relative;
+}
+#about section.wrapper section.bottom ul li div.arrow div.rarrow {
+  width: 70px;
+  padding: 30%;
+  background: #ef6858;
+  border-radius: 16px;
+  transform: rotate(180deg);
+}
+#about section.wrapper section.bottom ul li div.arrow div.rarrow img {
+  width: 100%;
+  display: block;
+  filter: invert(1);
+}
+#about section.wrapper section.bottom ul li div.arrow div.larrow {
+  width: 70px;
+  position: absolute;
+  top: 74%;
+  left: 65%;
+  padding: 30%;
+  background: #ef6858;
+  border-radius: 16px;
+}
+#about section.wrapper section.bottom ul li div.arrow div.larrow img {
+  width: 100%;
+  display: block;
+  filter: invert(1);
+}
+#more {
+  background: url(../images/footer-bg.png) no-repeat;
+  background-size: cover;
+  height: 750px;
+}
+#more section.wrapper {
+}
+#more section.wrapper section.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#more section.wrapper section.about div.left {
+  margin-top: 17%;
+}
+#more section.wrapper section.about div.left form {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#more section.wrapper section.about div.left form input {
+  border: 1px solid;
+  width: 46%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+#more section.wrapper section.about div.left form input[type="text"] {
+  margin-right: 3%;
+}
+#more section.wrapper section.about div.left form input[type="email"] {
+}
+#more section.wrapper section.about div.left form textarea {
+  border: 1px solid;
+  width: 96%;
+  margin-top: 2%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+#more section.wrapper section.about div.left form a.button {
+  color: #fff;
+  background: #f1813f;
+  padding: 17px;
+  border-radius: 28px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+#more section.wrapper section.about div.right {
+  margin-top: 18%;
+  margin-left: 3%;
+  color: #fff;
+}
+#more section.wrapper section.about div.right h4 {
+  font-family: "GT-Eestibold";
+  font-size: 55px;
+}
+#more section.wrapper section.about div.right h4 b {
+  color: #f5a741;
+}
+#more section.wrapper section.about div.right p {
+  color: #fff;
+  margin-top: 23px;
+}
+#more section.wrapper section.about div.right div.icons {
+  display: flex;
+  margin-top: 20px;
+}
+#more section.wrapper section.about div.right div.icons div.img_container {
+  width: 6%;
+  margin-right: 30px;
+  border: 1px solid;
+  padding: 7px;
+  border-radius: 50%;
+}
+#more section.wrapper section.about div.right div.icons div.img_container:last-child {
+  margin-right: 0;
+}
+#more section.wrapper section.about div.right div.icons div.img_container img {
+  filter: invert(1);
+  width: 100%;
+  display: block;
+}
+#more section.wrapper section.end {
+  margin-top: 10%;
+}
+#more section.wrapper section.end hr.line {
+  border: 2px solid #ef7973;
+}
+#more section.wrapper section.end p {
+  text-align: center;
+  margin-top: 3%;
+  color: #fff;
+}
+@media all and (max-width: 1280px) {
+  #specs section.wrapper div.right {
+    width: 60%;
+  }
+  #specs section.wrapper div.left {
+    margin-right: 5%;
+  }
+  #about section.wrapper section.bottom ul {
+    flex-wrap: wrap;
+  }
+  #about section.wrapper section.bottom ul li {
+    width: 80%;
+    margin: 20px auto;
+  }
+  #about section.wrapper section.bottom ul li:last-child {
+    display: none;
+  }
+  #more section.wrapper section.about div.right {
+    margin-top: 22%;
+  }
+}
+@media all and (max-width: 980px) {
+  #home header section.wrapper div.middle {
+    margin-left: 11%;
+  }
+  #home section.spotlight {
+    margin-top: 20px;
+  }
+  #home {
+    height: 550px;
+  }
+  #home section.spotlight section.wrapper h1 {
+    width: 64%;
+  }
+  #features section.wrapper ul {
+    flex-wrap: wrap;
+  }
+  #features section.wrapper ul li {
+    width: 100%;
+  }
+  #features section.wrapper ul li {
+    height: 450px;
+    margin-bottom: 25px;
+  }
+  #specs {
+    padding: 0;
+  }
+  #specs section.wrapper div.left {
+    display: none;
+  }
+  #specs section.wrapper div.right {
+    width: 100%;
+  }
+  #about {
+    padding-top: 50px;
+  }
+  #more section.wrapper section.about div.left {
+    margin-top: 0;
+  }
+  #more section.wrapper section.about div.right {
+    margin-top: 0;
+  }
+  #more {
+    background-position: 0 -250px;
+    background-size: unset;
+    height: unset;
+  }
+}
+@media all and (max-width: 768px) {
+  #home header {
+    width: 8%;
+    margin: 0 auto;
+  }
+  #home header section.wrapper div.middle {
+    display: none;
+  }
+  #home {
+    background: none;
+    height: 450px;
+  }
+  #home section.spotlight section.wrapper h1 {
+    width: 100%;
+    text-align: center;
+  }
+  #home section.spotlight section.wrapper p {
+    width: 98%;
+    text-align: center;
+  }
+  #home section.spotlight section.wrapper div.button_container {
+    text-align: center;
+  }
+  #features {
+    padding-bottom: 30px;
+  }
+  #about section.wrapper section.bottom ul li {
+    width: 100%;
+  }
+  #more {
+    background: none;
+  }
+  #more section.wrapper section.about {
+    flex-wrap: wrap;
+  }
+  #more section.wrapper section.about div.left form {
+    margin-top: 30px;
+  }
+  #more section.wrapper section.about div.right {
+    margin-top: 10px;
+  }
+  #more section.wrapper section.about div.right {
+    margin-top: 20px;
+  }
+  #more section.wrapper section.about div.right p {
+    color: #42526e;
+    margin-top: 23px;
+  }
+  #more section.wrapper section.about div.right div.icons div.img_container {
+    border: 1px solid #000;
+  }
+  #more section.wrapper section.about div.right h4 {
+    color: #000;
+  }
+  #more section.wrapper section.end p {
+    color: #42526e;
+  }
+}
+@media all and (max-width: 640px) {
+  #features {
+    padding-top: 10%;
+  }
+  #about section.wrapper section.top p {
+    width: 100%;
+  }
+}
+@media all and (max-width: 480px) {
+  #specs section.wrapper div.right ul li {
+    flex-wrap: wrap;
+  }
+  #specs section.wrapper div.right ul li div.img_container {
+    width: 100%;
+    text-align: center;
+  }
+  #specs section.wrapper div.right ul li div.content {
+    margin-left: 0;
+    text-align: center;
+  }
+  #specs section.wrapper div.right ul li p {
+    width: 100%;
+  }
+  #about section.wrapper section.bottom ul {
+    width: 100%;
+  }
+  #about section.wrapper section.bottom ul li {
+    margin-top: 32px;
+  }
+  #about section.wrapper section.bottom ul li div.img_container {
+    top: -44px;
+    left: -15px;
+  }
+  #more section.wrapper section.about div.right div.icons div.img_container {
+    width: 13%;
+  } 
+}
+@media all and (max-width: 360px) {
+  #features {
+    padding-top: 55%;
+  }
+}
